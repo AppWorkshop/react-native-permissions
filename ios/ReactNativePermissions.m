@@ -45,6 +45,7 @@
 #import "RNPSpeechRecognition.h"
 #import "RNPMediaLibrary.h"
 #import "RNPMotion.h"
+#import "RNPSiri.h"
 
 
 @interface ReactNativePermissions()
@@ -112,7 +113,6 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
     NSString *status;
 
     switch (type) {
-
         case RNPTypeLocation: {
             NSString *locationPermissionType = [RCTConvert NSString:json];
             status = [RNPLocation getStatusForType:locationPermissionType];
@@ -150,10 +150,11 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
             break;
         case RNPTypeMediaLibrary:
             status = [RNPMediaLibrary getStatus];
-            break;
         case RNPTypeMotion:
             status = [RNPMotion getStatus];
             break;
+        case RNPTypeSiri:
+            status = [RNPSiri getStatus];
         default:
             break;
     }
@@ -190,6 +191,8 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
             return [RNPMediaLibrary request:resolve];
         case RNPTypeMotion:
             return [RNPMotion request:resolve];
+        case RNPTypeSiri:
+            return [RNPSiri request:resolve];
         default:
             break;
     }

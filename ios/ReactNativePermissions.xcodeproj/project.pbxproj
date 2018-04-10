@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40529184207CA94400E28AEA /* RNPSiri.m in Sources */ = {isa = PBXBuildFile; fileRef = 40529183207CA94400E28AEA /* RNPSiri.m */; };
 		488FE29C200BC8A100E05AB0 /* RNPMediaLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 488FE29B200BC8A100E05AB0 /* RNPMediaLibrary.m */; };
 		488FE2A2200BCED100E05AB0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488FE2A1200BCEC900E05AB0 /* MediaPlayer.framework */; };
 		669581F71FE4416B008596CD /* RCTConvert+RNPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 669581F41FE4416B008596CD /* RCTConvert+RNPStatus.m */; };
@@ -36,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		40529183207CA94400E28AEA /* RNPSiri.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPSiri.m; sourceTree = "<group>"; };
+		4073A938207CB037008962B7 /* RNPSiri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPSiri.h; sourceTree = "<group>"; };
 		488FE29B200BC8A100E05AB0 /* RNPMediaLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPMediaLibrary.m; sourceTree = "<group>"; };
 		488FE29D200BC8D200E05AB0 /* RNPMediaLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPMediaLibrary.h; sourceTree = "<group>"; };
 		488FE2A1200BCEC900E05AB0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -111,6 +114,8 @@
 				669582031FE441A7008596CD /* RNPPhoto.m */,
 				6695820B1FE441A8008596CD /* RNPSpeechRecognition.h */,
 				669581FD1FE441A7008596CD /* RNPSpeechRecognition.m */,
+				4073A938207CB037008962B7 /* RNPSiri.h */,
+				40529183207CA94400E28AEA /* RNPSiri.m */,
 			);
 			path = Permissions;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				6695820F1FE441A8008596CD /* RNPBluetooth.m in Sources */,
 				669582141FE441A8008596CD /* RNPContacts.m in Sources */,
 				6695820D1FE441A8008596CD /* RNPSpeechRecognition.m in Sources */,
+				40529184207CA94400E28AEA /* RNPSiri.m in Sources */,
 				669582131FE441A8008596CD /* RNPAudioVideo.m in Sources */,
 				D0AD62322000657000D89898 /* RNPMotion.m in Sources */,
 				669581F81FE4416B008596CD /* ReactNativePermissions.m in Sources */,
